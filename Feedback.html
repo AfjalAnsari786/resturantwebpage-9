@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style> 
+    *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  body{
+      background-color: aquamarine;
+  }
+  a{
+      color: rgb(250, 251, 252);
+      text-decoration: none;
+  }
+  .navbar{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      background: rgb(111, 209, 13);
+  }
+  .navbar .logo{
+      font-size: 30px;
+      font-weight: 700;
+      justify-content: space-between;
+      margin-right: 32%;
+  }
+  @media only screen and (max-width: 700px) {
+    .navbar .logo {
+     margin-right: auto;
+     font-size: 15px ;
+    }
+  }
+  .navbar ul{
+      display: flex;
+  }
+  .navbar ul li{
+      list-style: none;
+      margin-right:38px;
+    
+  }
+  .navbar ul li a{
+      font-size: 22px;
+      font-weight: 500;
+      transition: .5s;
+  }
+
+  .navbar ul li:hover a,
+  .navbar ul li.active-section a{
+      color: blue;
+  }
+  ul li ul.dropdown li{
+    display: block;
+
+  }
+  ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  @media only screen and (max-width: 700px) {
+    .class navbar {
+    font-size: 12px;
+  
+    }
+  }
+  .home{
+      display: flex;
+      align-items: center;
+      height: 65vh;
+      padding: 30px;
+      color: white;
+  }
+  @media only screen and (max-width: 700px) {
+    .home {
+    font-size: 12px;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+  text-align: center;
+    }
+  }
+  .contact__section{
+    margin-top: 100px;
+    text-align: center;
+  }
+     .getin__touch{
+        text-align: center;
+      }
+    .contact__title{
+        margin: 30px;
+        font-size: 35px;
+    }
+    .contact__content{
+        margin: 30px;
+        font-size: 30px;
+    }
+    .contact__input{
+     background-color:rgb(206, 201, 195);
+     width:700px;
+     border-radius: 15px;
+     height: 50px;
+    }
+    .massage__button{
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(7, 165, 15);
+        border: 2px solid  rgb(34, 199, 19);
+        border-radius:40px;
+        box-shadow:0 0 10px;
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+        transition: .5s;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+   
+    body{
+  background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+
+}
+
+    </style>
+</head>
+<body>
+  <div>
+    <nav class="class navbar">
+        <ul>
+        <a href="#" class="logo">Diploma Dhaba Wala</a>
+        <li class="active-section"><a href="index.html">Home</a></li>
+        <li><a href="">Menu</a>
+        <ul class="dropdown">
+          <li><a href="veg menu.html">1 Veg</a></li>
+          <li><a href="non veg menu.html">2 Non-veg</a></li>
+        </ul>
+        </li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="">Service</a></li>
+        </ul>
+    </nav>
+  </div>
+    <background-img: url(\C:\Users\AfjalAnsari\Downloads\food-4k-anl1yr892h6ccjeb.jpg)></background-img:>
+<section class="contact__section" id="contact">
+    <h2 class="section__title">Please Share your Feedback<br>For Better Understanding</h2>
+
+    <div class="contact__container">
+      <div>
+        <div class="contact__information">
+          <i class="uil uil-calling contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Contact Me</h3>
+            <span class="contact__subtitle"
+              ><a href="tel:6202543988"></a>6202543988</span
+            >
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-envelope-minus contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Email</h3>
+            <span class="contact__subtitle"
+              >afjal9845@gmail.com</span
+            >
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-map-marker contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__subtitle"
+              >BIHAR,DIST-saran(chhapra),vill-sarnathchak</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <form action="" class="contact__form">
+        <div class="contact__inputs">
+          <div class="contact__content">
+            <label for="" class="content__label"></label>
+            <input type="text" class="contact__input" placeholder="Name"/>
+          </div>
+
+          <div class="contact__content">
+            <label for="" class="content__label"></label>
+            <input type="Email" class="contact__input" placeholder="Email"/>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <label for="" class="content__label"></label>
+          <textarea
+            name=""
+            id=""
+            cols="0"
+            rows="7"
+            class="contact__input"
+          placeholder="Message" ></textarea>
+        </div>
+
+        <div>
+          <a
+            href=" mailto: afjal9845@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+            class="massage__button"
+          >
+            Submit
+            <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

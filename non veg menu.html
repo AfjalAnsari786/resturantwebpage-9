@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Veg Menu</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  body{
+      background-color: aquamarine;
+  }
+  a{
+      color: rgb(250, 251, 252);
+      text-decoration: none;
+  }
+  .navbar{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      background: rgb(111, 209, 13);
+  }
+  .navbar .logo{
+      font-size: 30px;
+      font-weight: 700;
+      justify-content: space-between;
+      margin-right: 32%;
+  }
+  @media only screen and (max-width: 700px) {
+    .navbar .logo {
+     margin-right: auto;
+    }
+  }
+  .navbar ul{
+      display: flex;
+  }
+  .navbar ul li{
+      list-style: none;
+      margin-left: 25px;
+  }
+  .navbar ul li a{
+      font-size: 25px;
+      font-weight: 500;
+      transition: .5s;
+  }
+  .navbar ul li:hover a,
+  .navbar ul li.active-section a{
+      color: blue;
+  }
+  ul li ul.dropdown li{
+    display: block;
+
+  }
+  ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  @media only screen and (max-width: 700px) {
+    .class navbar {
+    font-size: 12px;
+  
+    }
+  }
+  .main-img{
+    width: 150px;
+    height:150px;
+  }
+  .home{
+      display: flex;
+      align-items: center;
+      height: 65vh;
+      padding: 30px;
+      color: white;
+  }
+  @media only screen and (max-width: 700px) {
+    .home {
+    font-size: 12px;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+  text-align: center;
+    }
+  }
+  .menu-section{
+   width: 20%;
+   margin-top: 100px;
+   margin-left: 130px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    border-radius: 20px;
+  }
+  .food img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+  }
+.title{
+  text-align: center;
+  margin-top: 3px;
+  font-size: 35px;
+}
+.description{
+  text-align: center;
+  margin-top: 3px;
+  font-size: 28px;
+}
+.about-food{
+  text-align: center;
+  margin-top: 6px;
+}
+.price{
+  text-align: center;
+  margin-top: 6px;
+  font-size: 30px;
+}
+button{
+  margin-top: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+.main-section{
+  display: flex;
+}
+button{
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(7, 165, 15);
+        border: 2px solid  rgb(95, 117, 16);
+        border-radius:40px;
+        box-shadow:0 0 10px;
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+        transition: .5s;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    button:hover{
+      background-color: rgb(43, 1, 142);
+      color: beige;
+    }
+    body {
+  background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+
+}
+    </style>
+</head>
+<body>
+
+  <div>
+    <nav class="class navbar">
+        <ul>
+        <a href="#" class="logo">Diploma Dhaba Wala</a>
+        <li class="active-section"><a href="index.html">Home</a></li>
+        <li><a href="">Menu</a>
+        <ul class="dropdown">
+          <li><a href="veg menu.html">1 Veg</a></li>
+          <li><a href="non veg menu.html">2 Non-veg</a></li>
+        </ul>
+        </li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="">Service</a></li>
+        </ul>
+    </nav>
+  </div>
+ <div class="main-section">
+    <div class="menu-section">
+        <div class="food">
+         <img src="https://i.postimg.cc/v84tj082/download-2.jpg" alt="">
+         </div>
+         <div class="about-food">
+            <h5 class="title"> chicken leg piece</h5>
+            <p class="description">dilever into 20-25 mints</p>
+            <br>
+         </div>
+         <div class="price">
+          <span>₹200</span><br>
+          <button><a href="Order Form.html">Ordre Now</a></button>
+        </div>
+    </div>
+    <div class="menu-section">
+      <div class="food">
+       <img src="https://i.postimg.cc/66FfNCyW/best-non-veg-hotel-in-pune1.jpg"alt="">
+       </div>
+       <div class="about-food">
+          <h5 class="title">fried mutton</h5>
+          <p class="description">dilever into 20-25 mints</p>
+          <br>
+       </div>
+       <div class="price">
+        <span>₹150</span><br>
+        <button><a href="Order Form.html">Ordre Now</a></button>
+      </div>
+  </div>
+  <div class="menu-section">
+    <div class="food">
+     <img src="https://i.postimg.cc/DwPrsD50/467750-fusionplus-1484731745.jpg" alt="">
+     </div>
+     <div class="about-food">
+        <h5 class="title">spicy egg curry</h5>
+        <p class="description">dilever into 20-25 mints</p>
+        <br>
+     </div>
+     <div class="price">
+      <span>₹250</span><br>
+      <button><a href="Order Form.html">Ordre Now</a></button>
+    </div>
+</div>
+        </div>
+        <div class="main-section">
+          <div class="menu-section">
+              <div class="food">
+               <img src="https://i.postimg.cc/8Cb6J6p6/194cdfe208ffb05028f318838a4b8afd-2.avif"alt="">
+               </div>
+               <div class="about-food">
+                  <h5 class="title">fried chicken with fried rice</h5>
+                  <p class="description">dilever into 20-25 mints</p>
+                  <br>
+               </div>
+               <div class="price">
+                <span>₹220</span><br>
+                <button><a href="Order Form.html">Ordre Now</a></button>
+              </div>
+          </div>
+          <div class="menu-section">
+            <div class="food">
+             <img src="https://i.postimg.cc/JhKs4Cx3/download.jpg" alt="">
+             </div>
+             <div class="about-food">
+                <h5 class="title">chicken roti</h5>
+                <p class="description">dilever into 20-25 mints</p>
+                <br>
+             </div>
+             <div class="price">
+              <span>₹180</span><br>
+              <button><a href="Order Form.html">Ordre Now</a></button>
+            </div>
+        </div>
+        <div class="menu-section">
+          <div class="food">
+           <img src="https://i.postimg.cc/66PGvwXY/20140301-Trade-151-0124-copy.jpg" alt="">
+           </div>
+           <div class="about-food">
+              <h5 class="title">chicken lollipop</h5>
+              <p class="description">dilever into 20-25 mints</p>
+              <br>
+           </div>
+           <div class="price">
+            <span>₹200</span><br>
+            <button><a href="Order Form.html">Ordre Now</a></button>
+          </div>
+      </div>
+              </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  body{
+      background-color: aquamarine;
+  }
+  a{
+      color: rgb(250, 251, 252);
+      text-decoration: none;
+  }
+  .navbar{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      background: rgb(111, 209, 13);
+  }
+  .navbar .logo{
+      font-size: 30px;
+      font-weight: 700;
+      justify-content: space-between;
+      margin-right: 53%;
+  }
+  @media only screen and (max-width: 700px) {
+    .navbar .logo {
+     margin-right: auto;
+    }
+  }
+  .navbar ul{
+      display: flex;
+  }
+  .navbar ul li{
+      list-style: none;
+      margin-left: 25px;
+  }
+  .navbar ul li a{
+      font-size: 15px;
+      font-weight: 500;
+      transition: .5s;
+  }
+  .navbar ul li:hover a,
+  .navbar ul li.active-section a{
+      color: blue;
+  }
+  @media only screen and (max-width: 700px) {
+    .class navbar {
+    font-size: 12px;
+  
+    }
+  }
+  .home{
+      display: flex;
+      align-items: center;
+      height: 65vh;
+      padding: 30px;
+      color: white;
+  }
+  @media only screen and (max-width: 700px) {
+    .home {
+    font-size: 12px;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+  text-align: center;
+    }
+  }
+  .food{
+    margin-top:90px;
+    height: 175px;
+    width: 300px;
+    display: flex;
+    margin-left:180px;
+    margin-right: 20px;
+    float: right;
+    background-color: antiquewhite;
+  }
+  .menu-section{
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px 5px;
+  }
+  .menu{
+   background-color: antiquewhite;
+  }
+    </style>
+</head>
+<body>
+    <div>
+          <nav class="class navbar">
+        <ul>
+        <a href="#" class="logo">Resturant</a>
+        <li class="active-section"><a href="#">home</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">feedback</a></li>
+        <li><a href="">contat-me</a></li>
+      <!-- <li><a href="trade.html">TRADER</a></li>-->
+        </ul>
+    </nav>
+    <div class="menu-section">
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\images (8).jpg " alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\images (4).jpg" alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\images (7).jpg" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+<div class="mene-section">
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\images (6).jpg" alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\images (5).jpg" alt="">
+        </div>
+</div>
+<div class="menu">
+    <div class="food">
+        <img src="D:\afjal 0\AFJALTR\images (3).jpg" alt="">
+    </div>
+</div>
+<div class="mene-section">
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\download (1).jpg" alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <div class="food">
+            <img src="D:\afjal 0\AFJALTR\download.jpg" alt="">
+        </div>
+</div>
+<div class="menu">
+    <div class="food">
+        <img src="D:\afjal 0\AFJALTR\images (2).jpg"  alt="">
+    </div>
+</div>
+</body>
+</html>

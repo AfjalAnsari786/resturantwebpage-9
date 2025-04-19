@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veg Menu</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  body{
+      background-color: aquamarine;
+  }
+  a{
+      color: rgb(250, 251, 252);
+      text-decoration: none;
+  }
+  .navbar{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px 9%;
+      background: rgb(111, 209, 13);
+  }
+  @media only screen and(max-width:700px){
+    .navbar{
+ 
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 9px 3%;
+      background: rgb(131, 253, 10);
+    }
+  }
+  .navbar .logo{
+      font-size: 30px;
+      font-weight: 700;
+      justify-content: space-between;
+      margin-right: 35%;
+      display: inline-block;
+  }
+  @media only screen and (max-width: 700px) {
+    .navbar .logo {
+     margin-right:1px;
+     font-size: 10px;
+     margin-left: 0px;
+    }
+  }
+  .navbar ul{
+      display: flex;
+  }
+  .navbar ul li{
+      list-style: none;
+      margin-left: 20px;
+  }
+  .navbar ul li a{
+      font-size: 25px;
+      font-weight: 500;
+      transition: .5s;
+  }
+  @media only screen and(max-widh:700px){
+    .navbar ul li a{
+      font-size: 5px;
+      display: flex;
+      margin-left: 1px;
+    }
+  }
+  .navbar ul li:hover a,
+  .navbar ul li.active-section a{
+      color: blue;
+  }
+  ul li ul.dropdown li{
+    display: block;
+
+  }
+  ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  @media only screen and (max-width: 700px) {
+    .class navbar {
+    font-size: 12px;
+  
+    }
+  }
+  .main-img{
+    width: 150px;
+    height:150px;
+  }
+  .home{
+      display: flex;
+      align-items: center;
+      height: 65vh;
+      padding: 30px;
+      color: white;
+  }
+  @media only screen and (max-width: 700px) {
+    .home {
+    font-size: 12px;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+  text-align: center;
+    }
+  }
+  .menu-section{
+   width: 20%;
+   margin-top: 100px;
+   margin-left: 120px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    border-radius: 20px;
+  }
+  @media only screen and(max-width:600px){
+    .menu-section{
+    width: 10%;
+    background-color: blue;
+    }
+  }
+  .food img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+  }
+.title{
+  text-align: center;
+  margin-top: 3px;
+  font-size: 35px;
+}
+.description{
+  text-align: center;
+  margin-top: 3px;
+  font-size: 28px;
+}
+.about-food{
+  text-align: center;
+  margin-top: 6px;
+}
+.price{
+  text-align: center;
+  margin-top: 6px;
+  font-size: 30px;
+}
+button{
+  margin-top: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+.main-section{
+  display: flex;
+}
+button{
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(7, 165, 15);
+        border: 2px solid  rgb(95, 117, 16);
+        border-radius:40px;
+        box-shadow:0 0 10px;
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+        transition: .5s;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    button:hover{
+      background-color: rgb(43, 1, 142);
+      color: beige;
+    }
+    body {
+  background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+    </style>
+</head>
+<body>
+  
+  <div>
+    <nav class="class navbar">
+        <ul>
+        <a href="#" class="logo">Diploma Dhaba Wala</a>
+        <li class="active-section"><a href="index.html">Home</a></li>
+        <li><a href="">Menu</a>
+        <ul class="dropdown">
+          <li><a href="veg menu.html">1 Veg</a></li>
+          <li><a href="non veg menu.html">2 Non-veg</a></li>
+        </ul>
+        </li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="">Service</a></li>
+        </ul>
+    </nav>
+  </div>
+ <div class="main-section">
+    <div class="menu-section">
+        <div class="food">
+         <img src="https://i.postimg.cc/9F4Z80p6/pexels-chanwalrus-1059905.jpg" alt="">
+         </div>
+         <div class="about-food">
+            <h5 class="title">salad</h5>
+            <p class="description">deliver into 20-25 mints</p>
+            <br>
+         </div>
+         <div class="price">
+          <span>₹28</span><br>
+          <button><a href="Order Form.html">Ordre Now</a></button>
+        </div>
+    </div>
+    <div class="menu-section">
+      <div class="food">
+       <img src="https://i.postimg.cc/52LvJrDp/pexels-enginakyurt-1437267.jpg" alt="">
+       </div>
+       <div class="about-food">
+          <h5 class="title">paasta</h5>
+          <p class="description">deliver into 15-20 mints</p>
+          <br>
+       </div>
+       <div class="price">
+        <span>₹120</span><br>
+        <button><a href="Order Form.html">Ordre Now</a></button>
+      </div>
+  </div>
+  <div class="menu-section">
+    <div class="food">
+     <img src="https://i.postimg.cc/fLT0xRyg/pexels-barfisch-pix-115740.jpg" alt="">
+     </div>
+     <div class="about-food">
+        <h5 class="title">Paasta-2</h5>
+        <p class="description">Deliver into 15-20 mints</p>
+        <br>
+     </div>
+     <div class="price">
+      <span>₹150</span><br>
+      <button><a href="Order Form.html">Ordre Now</a></button>
+    </div>
+</div>
+        </div>
+        <div class="main-section">
+          <div class="menu-section">
+              <div class="food">
+               <img src=https://i.postimg.cc/G2qGNs6C/06d21da8e84ac204f313ad9082bc4e1b.jpgalt="">
+               </div>
+               <div class="about-food">
+                  <h5 class="title">Roll</h5>
+                  <p class="description">deliver into 15-20 mints</p>
+                  <br>
+               </div>
+               <div class="price">
+                <span>₹50</span><br>
+                <button><a href="Order Form.html">Ordre Now</a></button>
+              </div>
+          </div>
+          <div class="menu-section">
+            <div class="food">
+             <img src="https://i.postimg.cc/htLJ6d75/pizza-piece-cheese-fast-food-wallpaper-preview.jpg" alt="">
+             </div>
+             <div class="about-food">
+                <h5 class="title">Pizza</h5>
+                <p class="description">deliver into 15-20 mints</p>
+                <br>
+             </div>
+             <div class="price">
+              <span>₹400</span><br>
+              <button><a href="Order Form.html">Ordre Now</a></button>
+            </div>
+        </div>
+        <div class="menu-section">
+          <div class="food">
+           <img src="https://i.postimg.cc/PqHD54jH/pexels-marvin-ozz-1297854-2474658.jpg" alt="">
+           </div>
+           <div class="about-food">
+              <h5 class="title">Samosa</h5>
+              <p class="description">deliver into 15-20 mints</p>
+              <br>
+           </div>
+           <div class="price">
+            <span>₹20</span><br>
+            <button><a href="Order Form.html">Ordre Now</a></button>
+          </div>
+      </div>
+              </div>
+</body>
+</html>
